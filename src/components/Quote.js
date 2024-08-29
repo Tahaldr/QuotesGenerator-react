@@ -5,7 +5,7 @@ function Quote() {
   const [quote, setQuote] = useState("");
   const [author, setAuthor] = useState("");
   const [category, setCategory] = useState("Happiness");
-  const apiKEY = "IPnKNbNQKzepQid95cJdkQ==ELVdlDzFqHTIEEwP";
+  const apiKEY = "Your-real-api-key";
 
   const fetchQuote = () => {
     const apiURL = `https://api.api-ninjas.com/v1/quotes?category=${category}`;
