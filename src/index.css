@@ -1,13 +1,110 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1091%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(81%2c 46%2c 95%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c484.608C88.282%2c497.064%2c147.932%2c394.218%2c217.572%2c338.548C279.704%2c288.879%2c361.541%2c251.946%2c385.809%2c176.193C409.64%2c101.803%2c349.531%2c28.589%2c341.77%2c-49.139C333.504%2c-131.923%2c387.072%2c-225.827%2c338.897%2c-293.656C291.058%2c-361.013%2c191.798%2c-362.445%2c110.175%2c-375.22C37.168%2c-386.646%2c-36.898%2c-387.643%2c-106.702%2c-363.394C-174.342%2c-339.897%2c-228.09%2c-292.275%2c-277.576%2c-240.521C-329.272%2c-186.455%2c-381.349%2c-130.031%2c-399.279%2c-57.408C-418.171%2c19.113%2c-422.335%2c107.096%2c-379.778%2c173.439C-338.213%2c238.235%2c-240.941%2c233.465%2c-181.394%2c282.254C-109.876%2c340.852%2c-91.551%2c471.69%2c0%2c484.608' fill='%23472853'%3e%3c/path%3e%3cpath d='M1440 1234.836C1564.3029999999999 1244.3110000000001 1633.5430000000001 1089.719 1728.58 1009.04 1809.561 940.294 1904.24 888.318 1956.877 796.05 2012.5720000000001 698.422 2038.774 586.948 2033.425 474.678 2027.72 354.93600000000004 2005.213 228.85000000000002 1925.586 139.238 1846.292 50 1719.52 31.509000000000015 1606.222-6.099000000000046 1488.637-45.129999999999995 1371.898-110.36000000000001 1250.671-84.79399999999998 1126.313-58.567999999999984 1005.931 20.245000000000005 947.105 132.904 890.923 240.49900000000002 974.3199999999999 370.589 950.717 489.652 924.998 619.385 748.02 730.639 804.943 850.021 862.249 970.206 1064.499 898.0989999999999 1178.372 967.101 1287.295 1033.103 1313.008 1225.156 1440 1234.836' fill='%235c346b'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1091'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+  max-width: 350px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px); 
+  border-radius: 10px; 
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+
+.container .categories {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.container .categories ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  gap: 10px;
+}
+
+.container .categories ul li {
+  background-color: #885f96;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.container .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container .main p:first-child {
+  font-size: 17px;
+  color: white;
+}
+
+.container .main p:first-child span {
+  color: #c8aed1;
+}
+
+.container .main .quotePara, .container .main .authorPara {
+  text-align: center;
+}
+
+.container .main .authorPara {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.container .main button {
+  font-size: 14px;
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 10px;
+  border: none;
+  background-color: #885f96;
+  font-weight: 300;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: unset;
 }
